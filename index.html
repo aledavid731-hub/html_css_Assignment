@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AleEdu Academy</title>
+  <meta name="description" content="Practical web and software courses for beginners.">
+  <link rel="icon" type="image/png" href="yo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home">AleEdu<span>Academy</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Intro Section -->
+    <section class="intro" id="home">
+      <h1>Learn to build things for the web, one small project at a time.</h1>
+      <p>
+        AleEdu Academy offers short, practical courses for beginners.
+        Every course ends with something you can put in your portfolio.
+        Pick a topic below and start this week.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-summary" id="about" style="max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem;">
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Why Learn With Us?</h2>
+      <p style="color: var(--text-muted);">
+        We focus on hands-on project implementation rather than theoretical lectures. 
+        Whether you are taking your first steps in coding or building out your professional portfolio, 
+        our structured guides ensure you understand the core fundamentals of modern web technologies.
+      </p>
+    </section>
+
+    <!-- Card Layout Section -->
+    <section class="courses" id="courses">
+      <h2>Our courses</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <img src="web.jpeg" alt="Code brackets illustration for Web Development" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Web</span>
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS and JavaScript by building real pages from scratch.</p>
+            <p class="meta">Beginner &bull; 8 weeks</p>
+            <a class="btn" href="#">View course</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="py.png" alt="Curly braces illustration for Python" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Programming</span>
+            <h3>Python Basics</h3>
+            <p>Variables, loops and functions, then small scripts that automate chores.</p>
+            <p class="meta">Beginner &bull; 6 weeks</p>
+            <a class="btn" href="#">View course</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="ui.jpg" alt="Typography illustration for UI Design" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Design</span>
+            <h3>UI Design</h3>
+            <p>Layout, colour and type choices that make interfaces easy to use.</p>
+            <p class="meta">Beginner &bull; 5 weeks</p>
+            <a class="btn" href="#">View course</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="sql.jpg" alt="SQL illustration for Databases" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Data</span>
+            <h3>Databases with SQL</h3>
+            <p>Design tables, write queries and join data from more than one source.</p>
+            <p class="meta">Intermediate &bull; 6 weeks</p>
+            <a class="btn" href="#">View course</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="git.png" alt="Git illustration for Git and GitHub" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Tools</span>
+            <h3>Git &amp; GitHub</h3>
+            <p>Track changes, work with branches and publish your projects online.</p>
+            <p class="meta">Beginner &bull; 3 weeks</p>
+            <a class="btn" href="#">View course</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="js.png" alt="JS illustration for JavaScript" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Web</span>
+            <h3>JavaScript in Practice</h3>
+            <p>Respond to clicks, fetch data and update the page without reloading.</p>
+            <p class="meta">Intermediate &bull; 8 weeks</p>
+            <a class="btn" href="#">View course</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Added Blog Section to match navbar link -->
+    <section class="blog-preview" id="blog" style="max-width: 1200px; margin: 4rem auto; padding: 0 1.5rem;">
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Latest Student Guides</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Check out our weekly articles on developer best practices, portfolio setup, and learning tips.</p>
+      <article style="background: var(--bg-white); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">How to Organize Your First GitHub Repository</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">A beginner-friendly guide to structuring assignment projects with clean README documentation.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <p class="footer-brand">AleEdu Academy</p>
+      <p>Email: aleedu.academy@gmail.com</p>
+      <p>Classes run Monday to Friday, 9:00 to 17:00.</p>
+      <p class="copy">&copy; 2026 AleEdu Academy. Student assignment project.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Opens and closes the menu on small screens
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
